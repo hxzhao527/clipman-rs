@@ -1,0 +1,28 @@
+[package]
+name = "clipman-rs"
+version = "0.1.0"
+edition = "2024"
+description = "A Wayland text clipboard history manager for labwc and Waybar"
+keywords = ["clipboard", "wayland", "labwc", "waybar"]
+categories = ["command-line-utilities"]
+
+[dependencies]
+anyhow = "1.0"
+encoding_rs = "0.8"
+gtk = { package = "gtk4", version = "0.11.5", features = ["v4_10"] }
+ksni = "0.3.7"
+mime = "0.3"
+rustix = { version = "1.1", features = ["event", "fs"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+sha2 = "0.10"
+sqlx = { version = "0.8.6", default-features = false, features = ["runtime-tokio", "sqlite", "migrate", "macros"] }
+thiserror = "2.0"
+tokio = { version = "1.53", features = ["macros", "rt-multi-thread", "sync", "time"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+unicode-segmentation = "1.12"
+wl-clipboard-rs = "0.9.5"
+
+[dev-dependencies]
+tempfile = "3"

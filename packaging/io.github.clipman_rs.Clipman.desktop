@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Name=Clipman
+Name[zh_CN]=剪贴板历史管理器
+Comment=Text clipboard history manager for Wayland
+Comment[zh_CN]=Wayland 文本剪贴板历史管理器
+Exec=clipman-rs
+Icon=io.github.clipman_rs.Clipman
+Terminal=false
+Categories=Utility;
+Keywords=clipboard;history;paste;
+Keywords[zh_CN]=剪贴板;历史;粘贴;
+StartupWMClass=io.github.clipman_rs.Clipman
